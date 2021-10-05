@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
 
         val diceImg1 = binding.dice1
         val diceImg2 = binding.dice2
+        val dicetotal = binding.TotalText
 
         binding.RollButton.setOnClickListener {
             Toast.makeText(this, "ROLLING...", Toast.LENGTH_SHORT).show()
@@ -68,6 +69,9 @@ class MainActivity : AppCompatActivity() {
             else if (num2 == 6) {
                 diceImg2.setImageResource(R.drawable.dice_6)
             }
+
+            val total = num1 + num2
+            dicetotal.setText(total.toString())
 
         }
 
