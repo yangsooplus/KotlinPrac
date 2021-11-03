@@ -1,23 +1,13 @@
 package com.yangsooplus.sayinglist
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Handler
-import android.util.Log
 import android.widget.ListView
-import android.widget.Toast
-import androidx.databinding.DataBindingUtil
-import com.yangsooplus.sayinglist.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
-
-    private var isDouble = false
-    private lateinit var binding : ActivityMainBinding
-
+class SayingActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_saying)
 
         val SayingList = mutableListOf<String>() //문자열 리스트
         SayingList.add("열 길 물속은 알아도 한 길 사람 속은 모른다.")
@@ -38,32 +28,8 @@ class MainActivity : AppCompatActivity() {
         SayingList.add("원님 덕에 나팔분다.")
         SayingList.add("급하면 바늘허리에 실 매어 쓸까?")
 
-
-        binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
-        binding.showAllSayingBtn.setOnClickListener {
-            val intent = Intent(this, SayingActivity::class.java)
-            startActivity(intent)
-        }
-        binding.SayingTextView.setText( SayingList.random())
-
-
-        binding.ChangeSayingBtn.setOnClickListener {
-            binding.SayingTextView.setText(SayingList.random())
-        }
+        val SayingAdapter = ListviewAdapter(SayingList)
+        val listview = findViewById<ListView>(R.id.SayingListView)
+        listview.adapter = SayingAdapter
     }
-
-    override fun onBackPressed() {
-
-        if (isDouble) {
-            finish()
-        }
-        else {
-            isDouble = true
-            Toast.makeText(this,  "뒤로가기 한 번 더 눌러 종료", Toast.LENGTH_LONG).show()
-
-        }
-
-        Handler().postDelayed({isDouble = false}, 2000) //2초 후 false로 설정
-    }
-
 }

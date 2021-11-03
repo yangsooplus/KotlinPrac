@@ -6,8 +6,8 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.TextView
 
-class ListViewAdapter(val List : MutableList<ListViewModel>) : BaseAdapter() {
-    override fun getCount(): Int { //리스트뷰 item 개수
+class ListviewAdapter(val List: MutableList<String>) : BaseAdapter() {
+    override fun getCount(): Int {
         return List.size
     }
 
@@ -20,17 +20,17 @@ class ListViewAdapter(val List : MutableList<ListViewModel>) : BaseAdapter() {
     }
 
     override fun getView(p0: Int, p1: View?, p2: ViewGroup?): View {
+
         var convertView = p1
-        if (convertView == null) { //item 가져오기
+
+        if (convertView == null) {
             convertView = LayoutInflater.from(p2?.context).inflate(R.layout.listview_item, p2, false)
         }
 
-        val title = convertView!!.findViewById<TextView>(R.id.listviewItem)
-        val content = convertView!!.findViewById<TextView>(R.id.listviewItem_2)
-        title.text = List[p0].title
-        content.text = List[p0].content
+        val listviewText = convertView?.findViewById<TextView>(R.id.listViewTextArea)
+        listviewText!!.text = List[p0]
 
-    return convertView!!
+        return convertView!!
     }
 
 }
