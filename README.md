@@ -1,6 +1,8 @@
 # KotlinPrac
- Inflearn #3~#5
- ## 
+ Inflearn [앱 8개를 만들면서 배우는 안드로이드 코틀린(Android Kotlin)](https://www.inflearn.com/course/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%BD%94%ED%8B%80%EB%A6%B0-%EB%AA%A8%EB%B0%94%EC%9D%BC%EC%95%B1) #3~#8
+
+<br><br>
+ 
  # #3 랜덤 주사위 앱
 
 <br>
@@ -28,3 +30,14 @@
 강의를 따라 앱 실행시 글귀 랜덤 출력과 리스트 페이지를 만들었다. 랜덤 주사위 앱에서 만들었던 것처럼 버튼을 누르면 랜덤으로 속담을 바꾸는 것을 추가해보았다. android:shadow 옵션을 이용하여 글자가 빛나는 것처럼 꾸며 보았다. 
 버튼 디자인 변경을 위해 검색하다가 [Android Button Maker](https://angrytools.com/android/button/) 라는 사이트를 발견해서 알지 못했던 옵션을 간편히 조절할 수 있었다. 
 (추가) data class를 이용해 속담과 그 뜻을 매치하였고, ListView의 item을 클릭하면 뜻이 토스트 메세지로 팝업되도록 추가하였다. 
+
+<br><br><br><br>
+
+# #5 전장 카드 리스트
+
+![0](https://user-images.githubusercontent.com/69582122/140525363-9efb1d00-7036-4ee8-ae58-5b1206e1a759.png)![1](https://user-images.githubusercontent.com/69582122/140525300-7662cfd3-0849-4519-9d24-1f3995f82ac8.png)![2](https://user-images.githubusercontent.com/69582122/140525308-0d9e5be4-c6dd-4e4e-8d4c-ad3815dd4c09.png)![3](https://user-images.githubusercontent.com/69582122/140525314-0986f128-3695-4923-84af-63e7b52507a0.png)
+
+- Navigation & Fragment
+- RecyclerView
+
+강의를 보면서 흐름에 따라 만들고 싶은 내용을 넣어서 만드는데, ListView보다 RecylclerView를 만드는데 코드가 복잡해서 Fragment 수를 늘리는 것 외에 기능을 추가하지 못했다. 변수명도 되도록이면 다르게 쓰려고 노력하는데, 변수가 무엇을 뜻하는지 파악하기 어려워서 뒤죽박죽이 되었다. 차분히 RecyclerView를 살펴봐야겠다. ~~다 넣기에는 너무 많아서 열받는 멀록과 재미없는 가시멧돼지는 뺐다.~~

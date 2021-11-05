@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/type_nv"
+    app:startDestination="@id/beastFragment">
+
+    <fragment
+        android:id="@+id/beastFragment"
+        android:name="com.yangsooplus.heartstonebattlegroundcard.BeastFragment"
+        android:label="fragment_beast"
+        tools:layout="@layout/fragment_beast" >
+        <action
+            android:id="@+id/action_beastFragment_to_elementFragment"
+            app:destination="@id/elementFragment" />
+        <action
+            android:id="@+id/action_beastFragment_to_mechaFragment"
+            app:destination="@id/mechaFragment" />
+        <action
+            android:id="@+id/action_beastFragment_to_piratesFragment"
+            app:destination="@id/piratesFragment" />
+        <action
+            android:id="@+id/action_beastFragment_to_dragonFragment"
+            app:destination="@id/dragonFragment" />
+        <action
+            android:id="@+id/action_beastFragment_to_devilFragment"
+            app:destination="@id/devilFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/devilFragment"
+        android:name="com.yangsooplus.heartstonebattlegroundcard.DevilFragment"
+        android:label="fragment_devil"
+        tools:layout="@layout/fragment_devil" >
+        <action
+            android:id="@+id/action_devilFragment_to_beastFragment"
+            app:destination="@id/beastFragment" />
+        <action
+            android:id="@+id/action_devilFragment_to_elementFragment"
+            app:destination="@id/elementFragment" />
+        <action
+            android:id="@+id/action_devilFragment_to_mechaFragment"
+            app:destination="@id/mechaFragment" />
+        <action
+            android:id="@+id/action_devilFragment_to_piratesFragment"
+            app:destination="@id/piratesFragment" />
+        <action
+            android:id="@+id/action_devilFragment_to_dragonFragment"
+            app:destination="@id/dragonFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dragonFragment"
+        android:name="com.yangsooplus.heartstonebattlegroundcard.DragonFragment"
+        android:label="fragment_dragon"
+        tools:layout="@layout/fragment_dragon" >
+        <action
+            android:id="@+id/action_dragonFragment_to_devilFragment"
+            app:destination="@id/devilFragment" />
+        <action
+            android:id="@+id/action_dragonFragment_to_beastFragment"
+            app:destination="@id/beastFragment" />
+        <action
+            android:id="@+id/action_dragonFragment_to_elementFragment"
+            app:destination="@id/elementFragment" />
+        <action
+            android:id="@+id/action_dragonFragment_to_mechaFragment"
+            app:destination="@id/mechaFragment" />
+        <action
+            android:id="@+id/action_dragonFragment_to_piratesFragment"
+            app:destination="@id/piratesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/elementFragment"
+        android:name="com.yangsooplus.heartstonebattlegroundcard.ElementFragment"
+        android:label="fragment_element"
+        tools:layout="@layout/fragment_element" >
+        <action
+            android:id="@+id/action_elementFragment_to_mechaFragment"
+            app:destination="@id/mechaFragment" />
+        <action
+            android:id="@+id/action_elementFragment_to_piratesFragment"
+            app:destination="@id/piratesFragment" />
+        <action
+            android:id="@+id/action_elementFragment_to_dragonFragment"
+            app:destination="@id/dragonFragment" />
+        <action
+            android:id="@+id/action_elementFragment_to_devilFragment"
+            app:destination="@id/devilFragment" />
+        <action
+            android:id="@+id/action_elementFragment_to_beastFragment"
+            app:destination="@id/beastFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mechaFragment"
+        android:name="com.yangsooplus.heartstonebattlegroundcard.MechaFragment"
+        android:label="fragment_mecha"
+        tools:layout="@layout/fragment_mecha" >
+        <action
+            android:id="@+id/action_mechaFragment_to_piratesFragment"
+            app:destination="@id/piratesFragment" />
+        <action
+            android:id="@+id/action_mechaFragment_to_dragonFragment"
+            app:destination="@id/dragonFragment" />
+        <action
+            android:id="@+id/action_mechaFragment_to_devilFragment"
+            app:destination="@id/devilFragment" />
+        <action
+            android:id="@+id/action_mechaFragment_to_beastFragment"
+            app:destination="@id/beastFragment" />
+        <action
+            android:id="@+id/action_mechaFragment_to_elementFragment"
+            app:destination="@id/elementFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/piratesFragment"
+        android:name="com.yangsooplus.heartstonebattlegroundcard.PiratesFragment"
+        android:label="fragment_pirates"
+        tools:layout="@layout/fragment_pirates" >
+        <action
+            android:id="@+id/action_piratesFragment_to_dragonFragment"
+            app:destination="@id/dragonFragment" />
+        <action
+            android:id="@+id/action_piratesFragment_to_devilFragment"
+            app:destination="@id/devilFragment" />
+        <action
+            android:id="@+id/action_piratesFragment_to_beastFragment"
+            app:destination="@id/beastFragment" />
+        <action
+            android:id="@+id/action_piratesFragment_to_elementFragment"
+            app:destination="@id/elementFragment" />
+        <action
+            android:id="@+id/action_piratesFragment_to_mechaFragment"
+            app:destination="@id/mechaFragment" />
+    </fragment>
+</navigation>
