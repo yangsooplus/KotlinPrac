@@ -55,5 +55,6 @@
 - Firebase
     - auth
     - database
+- Dialogue
 
 파이어베이스의 익명 로그인, 이메일 로그인을 사용하는 방법을 익혔다. uid를 이용해 Realtime Database에 데이터를 읽고 쓰는 방법도 알게 되었다. 앞서 만들었던 스플래쉬화면, 어댑터를 이용한 리스트를 이용해서 앱을 구성했다. 
