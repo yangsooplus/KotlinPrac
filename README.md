@@ -41,3 +41,19 @@
 - RecyclerView
 
 강의를 보면서 흐름에 따라 만들고 싶은 내용을 넣어서 만드는데, ListView보다 RecylclerView를 만드는데 코드가 복잡해서 Fragment 수를 늘리는 것 외에 기능을 추가하지 못했다. 변수명도 되도록이면 다르게 쓰려고 노력하는데, 변수가 무엇을 뜻하는지 파악하기 어려워서 뒤죽박죽이 되었다. 차분히 RecyclerView를 살펴봐야겠다. ~~다 넣기에는 너무 많아서 열받는 멀록과 재미없는 가시멧돼지는 뺐다.~~
+
+
+
+<br><br><br><br>
+
+# #6 나만의 한줄 일기장
+
+
+![splash](https://user-images.githubusercontent.com/69582122/142726464-419adade-c8f6-4dfd-b0aa-9e826c6b02ea.png)![main](https://user-images.githubusercontent.com/69582122/142726467-760519db-bd2c-486b-bf7d-14beb615ba8a.png)![dialogue0](https://user-images.githubusercontent.com/69582122/142726470-e99b7c06-e50a-44a5-8e1a-a749357cd5fc.png)![dialogue1](https://user-images.githubusercontent.com/69582122/142726472-729d6733-fb22-4721-90bf-2a42b44077a5.png)![dialogue2](https://user-images.githubusercontent.com/69582122/142726475-f06180a1-224e-4e96-94bc-ff5ea55a7ee0.png)
+![firebase](https://user-images.githubusercontent.com/69582122/142726480-e2d9bf58-d7cd-4f2c-8820-b0753ee9ed18.png)
+
+- Firebase
+    - auth
+    - database
+
+파이어베이스의 익명 로그인, 이메일 로그인을 사용하는 방법을 익혔다. uid를 이용해 Realtime Database에 데이터를 읽고 쓰는 방법도 알게 되었다. 앞서 만들었던 스플래쉬화면, 어댑터를 이용한 리스트를 이용해서 앱을 구성했다. 
