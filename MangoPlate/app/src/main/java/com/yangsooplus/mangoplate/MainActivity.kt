@@ -1,7 +1,9 @@
 package com.yangsooplus.mangoplate
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -82,6 +84,13 @@ class MainActivity : AppCompatActivity() {
         val RecyclerView = findViewById<RecyclerView>(R.id.RV)
         val RecyclerViewAdapter = RVAdapter(baseContext, itemList)
         RecyclerView.adapter = RecyclerViewAdapter
+        RecyclerViewAdapter.itemClick = object: RVAdapter.ItemClick {
+            override fun onClick(view: View, position: Int) {
+                val intent = Intent(baseContext, ViewActivity::class.java)
+                intent.putExtra("url", itemList[position].url)
+                startActivity(intent)
+            }
+        }
 
         RecyclerView.layoutManager = GridLayoutManager(this, 2)
     }

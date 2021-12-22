@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JoinActivity"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/UserEmail"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Email"/>
+
+    <EditText
+        android:id="@+id/UserPassword"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Password"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/JoinBtn"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Sign in"
+        android:backgroundTint="#FF5722"
+        />
+
+</LinearLayout>
