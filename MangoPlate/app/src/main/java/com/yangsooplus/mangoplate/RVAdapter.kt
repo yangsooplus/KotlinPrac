@@ -24,7 +24,7 @@ class RVAdapter(val context : Context, val List : MutableList<ContentsModel> ) :
 
     override fun onBindViewHolder(holder: RVAdapter.ViewHolder, position: Int) {
         if (itemClick != null) {
-            holder?.itemView.setOnClickListener{v->
+            holder.itemView.setOnClickListener{v->
                 itemClick!!.onClick(v, position)
             }
         }
@@ -44,7 +44,7 @@ class RVAdapter(val context : Context, val List : MutableList<ContentsModel> ) :
 
             contentsText.text = item.titleText
             Glide.with(context) //MainActivity에서 가져온 baseContext
-                .load(item.ImageUrl) //ImageUrl들을 가져와서
+                .load(item.imageUrl) //ImageUrl들을 가져와서
                 .into(contentsImg) //itemView에 있는 ImageView에 넣겠다.
         }
 

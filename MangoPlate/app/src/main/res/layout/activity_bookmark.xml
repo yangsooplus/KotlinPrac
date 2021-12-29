@@ -1,27 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    >
+    tools:context=".BookmarkActivity">
 
     <TextView
-        android:id="@+id/GoBookmark"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
         android:background="@drawable/round_textbackground"
-        android:padding="15dp"
-        android:text="내 북마크로 가기"
-        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="나의 북마크"
         android:textSize="18sp"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/RV"
+        android:id="@+id/bookmarkRV"
         android:layout_marginTop="50dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>

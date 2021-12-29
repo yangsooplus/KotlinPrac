@@ -58,3 +58,20 @@
 - Dialogue
 
 파이어베이스의 익명 로그인, 이메일 로그인을 사용하는 방법을 익혔다. uid를 이용해 Realtime Database에 데이터를 읽고 쓰는 방법도 알게 되었다. 앞서 만들었던 스플래쉬화면, 어댑터를 이용한 리스트를 이용해서 앱을 구성했다. 
+
+
+
+<br><br><br><br>
+
+# #7 도넛 맛집 리스트
+
+![splash](https://user-images.githubusercontent.com/69582122/147647167-ec6c0b04-0b2e-464c-b7f0-1b2ed37a2e4f.png)![signin](https://user-images.githubusercontent.com/69582122/147647173-8b3348f1-70a0-47af-80e8-2c0bad18754a.png)![main](https://user-images.githubusercontent.com/69582122/147647176-339df21f-8828-4172-8ea3-e0e9aa5ed2cc.png)![webview](https://user-images.githubusercontent.com/69582122/147647179-df3e5735-6fc9-4486-aa4c-7df49f943875.png)![bookmark](https://user-images.githubusercontent.com/69582122/147647181-e4350b8c-ba1f-44b3-9039-ec2fde645531.png)
+
+- Firebase
+    - auth
+    - database
+- RecylerView
+- WebView
+- Glide
+
+첫 실행시 가입이 되어 있지 않은 사용자인 경우 회원가입 창에서 가입을 해야 메인 화면으로 입장할 수 있다. 망고플레이트 사이트에서 가져온 가게명, url, 이미지 url을 RecyclerView로 가지고 왔다. (크롤링 아니고 수작업) RecylcerView의 아이템을 누르면 Webview로 해당 망고플레이트 페이지로 넘어간다. 상단의 '북마크에 저장'을 누르면 realtime database에 저장된다. 북마크 화면으로 가면 realtime database에 저장된 정보들을 가져와 RecylerView로 보여준다.

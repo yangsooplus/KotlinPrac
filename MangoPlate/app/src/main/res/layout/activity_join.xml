@@ -29,7 +29,7 @@
         android:layout_margin="20dp"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="Sign in"
+        android:text="Sign up"
         android:backgroundTint="#FF5722"
         />
 
