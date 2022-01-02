@@ -75,3 +75,14 @@
 - Glide
 
 첫 실행시 가입이 되어 있지 않은 사용자인 경우 회원가입 창에서 가입을 해야 메인 화면으로 입장할 수 있다. 망고플레이트 사이트에서 가져온 가게명, url, 이미지 url을 RecyclerView로 가지고 왔다. (크롤링 아니고 수작업) RecylcerView의 아이템을 누르면 Webview로 해당 망고플레이트 페이지로 넘어간다. 상단의 '북마크에 저장'을 누르면 realtime database에 저장된다. 북마크 화면으로 가면 realtime database에 저장된 정보들을 가져와 RecylerView로 보여준다.
+
+
+# #8 D-day
+![0](https://user-images.githubusercontent.com/69582122/147877749-b84f4029-8e28-4fa3-9689-d6dd30e89032.png)![1](https://user-images.githubusercontent.com/69582122/147877752-f2023f05-bff9-49d8-bd0f-e8e2abe422cd.png)
+![2](https://user-images.githubusercontent.com/69582122/147877753-b7795970-ccf6-4bef-8ad4-09277ca14a7a.png)![3](https://user-images.githubusercontent.com/69582122/147877754-d1e53454-25a7-41ba-8af9-00a9c949c912.png)
+
+
+- RelativeView
+- Calender
+
+간단한 D-day 앱을 만들며 강의를 마쳤다. 
